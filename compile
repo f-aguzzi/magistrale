@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Check if the argument is provided
+if [ -z "$1" ]
+then
+    echo "Nessuna cartella specificata. Inserisci il nome della cartella."
+    exit 1
+fi
+
+# Check if the subfolder exists
+if [ ! -d "$1" ]
+then
+    echo "Cartella inesistente: $1"
+    exit 1
+fi
+
+# Change to the subfolder
+cd "$1" || exit
+
+# Run the command
+cat *.md > all.md
+pandoc all.md -o $1.pdf
+rm all.md
+
+# Check if the command was successful
+if [ $? -eq 0 ]
+then
+    echo "Script eseguito."
+else
+    echo "Esecuzione fallita."
+fi
