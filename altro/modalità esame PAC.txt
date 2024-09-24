@@ -1,0 +1,29 @@
+---
+MODALITA' ESAME PAC 9 CFU
+---
+
+6 cfu progettazione e algoritmi, 3 cfu computabilità
+
+- prova scritta 2h:
+	- 3 quesiti algoritmi, strutture dati
+	- 1 quesito architettura software
+- orale 30m: presentazione progetto
+
+L'esame farà media pesata con Programmazione Avanzata 6 CFU.
+
+INDICAZIONI PROGETTO
+
+- sviluppo in gruppi da max 3 persone
+- idea libera da concordare con docente
+- da consegnare al docente dopo aver passato lo scritto
+- caratteristiche obbligatorie: vedi foglio sul team
+- modalità valutazione:
+	- 10% interesse per il problema affrontato, fondamenti teorici e
+	  interdisciplinari, uso librerie
+	- 60%: bontà della soluzione: 1/3 architettura e qualità (stile,
+	  modularizzazione, interfacce, pattern), 1/3 algoritmi e struttre
+	  dati, librerie esterne, 1/3 validazione, testing e copertura
+	- 20% modellazione e documentazione: casi d'uso, API, struttura,
+	  comportamento, grado di corrispondenza tra modello e software
+	  effettivo, valutazione sviluppo agile e uso toolchain
+	- 10% presenza in aula / esercizi delle esercitazioni
