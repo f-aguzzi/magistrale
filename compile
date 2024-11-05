@@ -19,8 +19,18 @@ cd "$1" || exit
 
 # Run the command
 cat *.md > all.md
+npx mmdc -i all.md -o all.md
+find . -name "*.svg" -exec sh -c 'npx svgexport "$1" "${1%.svg}.png"' _ {} \;
+sed -i -e s/\.svg/\.png/g all.md
+sed -i -e '/!\[.*\]\(.*\.png\)/ s/$/{  width=350 }/' all.md
+# pandoc -H ../disable_float.tex --filter ../underline_filter.py all.md -o $1.pdf
+sed -i -e 's/<u>/\\underline{/g' all.md
+sed -i -e 's/<\/u>/\}/g' all.md
 pandoc all.md -o $1.pdf
 rm all.md
+rm *.png
+rm *.svg
+rm all.md-e
 
 # Check if the command was successful
 if [ $? -eq 0 ]
