@@ -377,10 +377,10 @@ ottimo.
 
 .LP
 Il
-.I "teorema degli scarti complementari" sancisce che le soluzioni ammissibili
-dei due problemi sono entrambe ottime per il rispettivo problema se e solo se
-il prodotto scalare delle due coppie variabili complementari è nullo. Questa è
-detta
+.I "teorema degli scarti complementari"
+sancisce che le soluzioni ammissibili dei due problemi sono entrambe ottime per
+il rispettivo problema se e solo se il prodotto scalare delle due coppie
+variabili complementari è nullo. Questa è detta
 .I "condizione di complementarietà".
 .LP
 Il simplesso duale può essere usato per ripristinare l'ammissibilità di una
